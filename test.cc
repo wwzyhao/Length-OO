@@ -1,7 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include "Length.h"
-// #include "LengthFactory.h"
+#include "LengthFactory.h"
 
 using namespace std;
 

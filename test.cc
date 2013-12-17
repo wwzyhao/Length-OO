@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include "UnitFactory.h"
 #include "LengthFactory.h"
 
 using namespace std;
@@ -28,8 +29,6 @@ void test() {
 	assert(INCH(13) + INCH(11) == FEET(2));
 	assert(FEET(3) + YARD(2) == YARD(3));
 	cout << "Case Four tesing success!" << endl;
-
-	cout << sizeof(enum lengthType)/sizeof(int);
 }
 
 int main() {

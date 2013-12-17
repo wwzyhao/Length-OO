@@ -5,7 +5,9 @@
 #define FEET(a) (LengthFactory::makeLength(a,feet))
 #define INCH(a) (LengthFactory::makeLength(a,inch))
 
-class LengthFactory {
+#define makeLength makeUnit
+
+class LengthFactory: public UnitFactory {
 public:
 	static Length& makeLength(amountType amt, lengthType lt) {
 		return *(new Length(amt, lt));

@@ -1,7 +1,10 @@
 #include "Length.h"
 
-Length::Length(amountType amt, lengthType lt): 
-	amount(amt), unit(lt), amountToBase(amount * LengthUnit::ratioToBase[lt]) {}
+Length::Length(amountType amt, lengthType lt) {
+		amount = amt;
+		unit = lt;
+		amountToBase = amount * UnitLib::lengthRatioToBase[lt];
+	}
 
 bool Length::operator == (const Length &otherLength) const {
 	return amountToBase == otherLength.amountToBase;

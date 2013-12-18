@@ -1,14 +1,14 @@
 #define unitType int
 #define amountType int
 
-enum lengthType {inch, feet, yard, mile, LengthTypeNum};
+enum lengthType {inch, feet, yard, mile, lengthTypeNum};
 
 class UnitLib {	
 private:
 	friend class Unit;
 	friend class Length;
 
-	static const amountType lengthRatioToBase[LengthTypeNum];
+	static const amountType lengthRatioToBase[lengthTypeNum];
 	static const amountType INCH_TO_BASE;
 	static const amountType FEET_TO_INCH;
 	static const amountType YARD_TO_FEET;

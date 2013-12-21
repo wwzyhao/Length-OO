@@ -1,6 +1,7 @@
 #include "Length.h"
 
 Length::Length(amountType amt, lengthType lt) {
+		kind = length;
 		amount = amt;
 		unit = lt;
 		amountToBase = amount * UnitLib::lengthRatioToBase[lt];
